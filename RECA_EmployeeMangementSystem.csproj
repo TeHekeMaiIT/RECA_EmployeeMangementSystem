@@ -223,6 +223,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminFinalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFinalReport.Designer.cs">
+      <DependentUpon>AdminFinalReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Detail_Grievances_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,9 +310,18 @@
     <Compile Include="SendEmail_Form.Designer.cs">
       <DependentUpon>SendEmail_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewFinalReportFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFinalReportFile.Designer.cs">
+      <DependentUpon>ViewFinalReportFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="WatermarkTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AdminFinalReport.resx">
+      <DependentUpon>AdminFinalReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Detail_Grievances_Form.resx">
       <DependentUpon>Admin_Detail_Grievances_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Emp_ViewSalaryForm.resx">
       <DependentUpon>Emp_ViewSalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -355,6 +373,9 @@
     </Compile>
     <EmbeddedResource Include="SendEmail_Form.resx">
       <DependentUpon>SendEmail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFinalReportFile.resx">
+      <DependentUpon>ViewFinalReportFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WatermarkTextBox.resx">
       <DependentUpon>WatermarkTextBox.cs</DependentUpon>

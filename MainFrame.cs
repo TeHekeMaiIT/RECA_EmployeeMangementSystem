@@ -185,11 +185,11 @@ namespace LeaveMangementForm
         
             Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Resources\ViewFinalRep_Click_btn.png");  // Change the button image when click
             ViewFinalRep_btn.BackgroundImage = B;
-            //Leave_Grievances LGF = new Leave_Grievances() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
-            //SubForm_pnl.Controls.Add(LGF);
-            //SubFormTitle_lbl.Text = "Leave and Grievances";
-            //LGF.Emp_ID = PassEmp_ID;
-            //OpenChildForm(LGF);     // Dispaly the form on panel and hide the exist one.
+            AdminFinalReport AFR = new AdminFinalReport() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
+            SubForm_pnl.Controls.Add(AFR);
+            SubFormTitle_lbl.Text = "Final Report";
+            //AFR.Emp_ID = PassEmp_ID;
+            OpenChildForm(AFR);     // Dispaly the form on panel and hide the exist one.
         }
 
         private void Emp_AttendanceManagment_btn_Click(object sender, EventArgs e)
