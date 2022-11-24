@@ -164,7 +164,7 @@ namespace LeaveMangementForm
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
             Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\AttendanceManagement_Click_btn.png");  // Change the button image when click
-            Emp_AttendanceManagment_btn.BackgroundImage = B;
+            AttendanceManagement_btn.BackgroundImage = B;
             Attendance Att = new Attendance() { TopLevel = false, TopMost = true };     // Load the Employee Attendance subform into the main frame.
             SubForm_pnl.Controls.Add(Att);
             SubFormTitle_lbl.Text = "Attendance";
