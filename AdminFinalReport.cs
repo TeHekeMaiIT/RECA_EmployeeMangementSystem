@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.IO;
 using System.Globalization;
+using loginsec;
 
 namespace LeaveMangementForm
 {
@@ -26,29 +27,28 @@ namespace LeaveMangementForm
             label8.Text = "Financial report " + DateTime.Now.ToShortDateString();
             textBox4.Text = "1st April - 31st March";
         }
-
+        Connection con = new Connection();
+        public string MySQLConnectionString;
         private void AdminFinalReport_Load(object sender, EventArgs e)
         {
+            
             int Payroll;
             //queries to display company details on the form 
-            string query = "select (select count(*) from employee Emp_ID) as 'employee', (select count(*) from department Dep_ID) as 'department';";
-            string query1 = "select Sum(Emp_Salary) from employee;";
-            string MySQLConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=Dbms@2022;database=human_resources";
-            MySqlConnection databaseConnection = new MySqlConnection(MySQLConnectionString);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-            MySqlConnection databaseConnection1 = new MySqlConnection(MySQLConnectionString);
-            MySqlCommand commandDatabase1 = new MySqlCommand(query1, databaseConnection1);
-            databaseConnection.Open();
-            databaseConnection1.Open();
-            MySqlDataReader myReader = commandDatabase.ExecuteReader();
-            MySqlDataReader myReader1 = commandDatabase1.ExecuteReader();
-            while (myReader.Read() && myReader1.Read()) //displaying details on page 
+            string query = "select (select count(*) from employee Emp_ID) as 'employee', (select count(*) from department Dep_ID) as 'department', (select Sum(Emp_Salary) from employee) as 'total';";
+
+            MySQLConnectionString = con.connectionString();
+            MySqlConnection mySqlConnection = new MySqlConnection(MySQLConnectionString);
+            MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+            mySqlConnection.Open();
+
+            MySqlDataReader myReader = cmd.ExecuteReader();
+            while (myReader.Read()) //displaying details on page 
             {
                 textBox2.Text = myReader.GetString(0);
                 textBox1.Text = myReader.GetString(1);
                 textBox3.Text = myReader.GetString(1);
                 //method to calculate year to date salary expenses
-                Payroll = Convert.ToInt32(myReader1.GetString(0));
+                Payroll = Convert.ToInt32(myReader.GetString(2));
                 int weeklyP = Payroll / 52;
                 int dailyP = Payroll / 365;
                 int ytd;
