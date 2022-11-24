@@ -39,7 +39,7 @@ namespace LeaveMangementForm
             // query featuring updated Employee_department information salary, annual leave, tax code, etc.
             string query = "select Employee.Emp_ID as Emp_ID, Emp_Type, Emp_FName, Emp_LName, Emp_Address," +
                 " Emp_Email, Emp_PhoneNum, Emp_Gender, Emp_Date_Of_Birth, Emp_position, Emp_salary," +
-                " Dep_Name, Emp_IRD, Emp_Start_Date, KiwiSaver_Percentage,  department.Annual_leave" +
+                " Dep_Name, Emp_IRD, Emp_Start_Date, KiwiSaver_Percentage, department.Annual_leave" +
                 " from employee, employee_department, department " +
                 "where employee.Emp_ID = '" + empID + "' && employee_department.Emp_ID = '" + empID + "' && department.Dep_ID = employee_department.Dep_ID;";
             int counter = 0;
@@ -110,7 +110,7 @@ namespace LeaveMangementForm
 
             MySQLConnectionString = con.connectionString(); 
             // statement to ensure that all required data is filled in on form before query execution
-            if (empType == "" || firstName == "" || lastName == "" || address == "" || phone == "" || irdNum == "" || salary == "" || tax == "" || leave == "" || startdate == "")
+            if (empType == "" || firstName == "" || lastName == "" || address == "" || phone == "" || irdNum == "" || salary == "" || leave == "" || startdate == "")
             {
                 MessageBox.Show("Please enter all neccessary information");
             }
@@ -151,13 +151,13 @@ namespace LeaveMangementForm
                 }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.InitializeComponent();
+            InitializeComponent();
+            DateBox.CustomFormat = "yyyy-MM-dd";
+            dateBox1.CustomFormat = "yyyy-MM-dd";
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             searchEmp();
@@ -220,7 +220,7 @@ namespace LeaveMangementForm
             MySQLConnectionString = con.connectionString(); 
             MySqlConnection databaseConnection = new MySqlConnection(MySQLConnectionString);
             MySqlCommand commandDatabase;
-            if (empType == "" || firstName == "" || lastName == "" || address == "" || phone == "" || irdNum == "" || salary == "" || tax == "" || leave == "" || startdate == "")
+            if (empType == "" || firstName == "" || lastName == "" || address == "" || phone == "" || irdNum == "" || salary == "" || leave == "" || startdate == "")
             {
                 MessageBox.Show("Please enter all neccessary information");
             }
@@ -288,7 +288,6 @@ namespace LeaveMangementForm
                 ID++;
             }
         }
-
         public void return_EmpDepID()
         {
 

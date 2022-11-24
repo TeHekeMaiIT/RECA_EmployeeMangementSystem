@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +46,7 @@ namespace LeaveMangementForm
         private void LeaveMg_Menu_btn_Click(object sender, EventArgs e)     // Click the Leave management Button
         {
             setButton();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\LeaveManagement_Click.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\LeaveManagement_Click.png");  // Change the button image when click
             LeaveMg_Menu_btn.BackgroundImage = B;
             LeaveManagement LMF = new LeaveManagement() { TopLevel = false, TopMost = true };           // Load the leave management subform into the main frame.
             SubForm_pnl.Controls.Add(LMF);
@@ -59,7 +60,7 @@ namespace LeaveMangementForm
         {
             setButton();
             LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\Leave_Grievances_Button_Click.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\Leave_Grievances_Button_Click.png");  // Change the button image when click
             Leave_Grievances_btn.BackgroundImage = B;
             Leave_Grievances LGF = new Leave_Grievances() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
             SubForm_pnl.Controls.Add(LGF);
@@ -85,24 +86,27 @@ namespace LeaveMangementForm
                
         public void setButton()
         {
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\LeaveManagement.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\LeaveManagement.png");  // Change the button image when click
             LeaveMg_Menu_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Images\Leave_Grievances_Button.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\Leave_Grievances_Button.png");  // Change the button image when click
             Leave_Grievances_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Images\Registration_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\Registration_btn.png");  // Change the button image when click
             Registration_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Images\AttendanceManagement_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\AttendanceManagement_btn.png");  // Change the button image when click
             AttendanceManagement_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Images\PayrollPage_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\PayrollPage_btn.png");  // Change the button image when click
             PayrollPage_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Resources\ViewFinalRep_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\ViewFinalRep_btn.png");  // Change the button image when click
             ViewFinalRep_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Images\AttendanceManagement_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\AttendanceManagement_btn.png");  // Change the button image when click
             Emp_AttendanceManagment_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Resources\ViewSalaryDetails_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\ViewSalaryDetails_btn.png");  // Change the button image when click
             ViewSalaryDetails_btn.BackgroundImage = B;
-            B = new Bitmap(@"..\..\..\RECA_EMS\Resources\Personal_Grievances_btn.png");  // Change the button image when click
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\EmpDetailsButton.png");  // Change the button image when click
+            EmpDetails_btn.BackgroundImage = B;
+            B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\Personal_Grievances_btn.png");  // Change the button image when click
             Personal_Grievances_btn.BackgroundImage = B;
+            
         }
         public void displayButton()
         {
@@ -126,25 +130,29 @@ namespace LeaveMangementForm
             Emp_AttendanceManagment_btn.Visible = false;
             ViewSalaryDetails_btn.Visible = false;
             Personal_Grievances_btn.Visible = false;
+            EmpDetails_btn.Visible = false;
 
         }
         public void DisplayEmployee_btn()
         {
+            ViewFinalRep_btn.Visible = false;
             LeaveMg_Menu_btn.Visible = true;
             Leave_Grievances_btn.Visible = false;
-            Registration_btn.Visible = true;
+            Registration_btn.Visible = false;
             AttendanceManagement_btn.Visible = false;
             PayrollPage_btn.Visible = false;
             Emp_AttendanceManagment_btn.Visible = true;
             ViewSalaryDetails_btn.Visible = true;
             Personal_Grievances_btn.Visible = true;
+            EmpDetails_btn.Visible = true;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)          // LogOut Button
         {
             setButton();
             LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\LogOut_btn_Click.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\LogOut_btn_Click.png");  // Change the button image when click
             Leave_Grievances_btn.BackgroundImage = B;
             LogIn_Form LGN = new LogIn_Form();
             LGN.Show();
@@ -155,7 +163,7 @@ namespace LeaveMangementForm
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\AttendanceManagement_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\AttendanceManagement_Click_btn.png");  // Change the button image when click
             Emp_AttendanceManagment_btn.BackgroundImage = B;
             Attendance Att = new Attendance() { TopLevel = false, TopMost = true };     // Load the Employee Attendance subform into the main frame.
             SubForm_pnl.Controls.Add(Att);
@@ -169,7 +177,7 @@ namespace LeaveMangementForm
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\PayrollPage_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\PayrollPage_Click_btn.png");  // Change the button image when click
             PayrollPage_btn.BackgroundImage = B;
             //Leave_Grievances LGF = new Leave_Grievances() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
             //SubForm_pnl.Controls.Add(LGF);
@@ -183,7 +191,7 @@ namespace LeaveMangementForm
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
         
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Resources\ViewFinalRep_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\ViewFinalRep_Click_btn.png");  // Change the button image when click
             ViewFinalRep_btn.BackgroundImage = B;
             AdminFinalReport AFR = new AdminFinalReport() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
             SubForm_pnl.Controls.Add(AFR);
@@ -196,7 +204,7 @@ namespace LeaveMangementForm
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\AttendanceManagement_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\AttendanceManagement_Click_btn.png");  // Change the button image when click
             Emp_AttendanceManagment_btn.BackgroundImage = B;
             Attendance Att = new Attendance() { TopLevel = false, TopMost = true };     // Load the Employee Attendance subform into the main frame.
             SubForm_pnl.Controls.Add(Att);
@@ -210,7 +218,7 @@ namespace LeaveMangementForm
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Resources\ViewSalaryDetails_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\ViewSalaryDetails_Click_btn.png");  // Change the button image when click
             ViewSalaryDetails_btn.BackgroundImage = B;
             Emp_ViewSalaryForm EVS = new Emp_ViewSalaryForm() { TopLevel = false, TopMost = true };
             //Leave_Grievances LGF = new Leave_Grievances() { TopLevel = false, TopMost = true };           // Load the leave Grievances subform into the main frame.
@@ -224,7 +232,7 @@ namespace LeaveMangementForm
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Resources\Personal_Grievances_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Resources\Personal_Grievances_Click_btn.png");  // Change the button image when click
             Personal_Grievances_btn.BackgroundImage = B;
             EmployeeGrievanceForm EG = new EmployeeGrievanceForm(){ TopLevel = false, TopMost = true };           // Load the Grievances and resigning subform into the main frame.
             SubForm_pnl.Controls.Add(EG);
@@ -241,11 +249,25 @@ namespace LeaveMangementForm
             OpenChildForm(HM);     // Dispaly the form on panel and hide the exist one.
         }
 
+        private void EmpDetails_btn_Click(object sender, EventArgs e)
+        {
+            setButton();
+            //LeaveManagement LMF = new LeaveManagement();
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\EmpDetailsButton_Click.png");  // Change the button image when click
+            EmpDetails_btn.BackgroundImage = B;
+            Emp_Registration ER = new Emp_Registration() { TopLevel = false, TopMost = true };  // Load the employee registration subform into the main frame.
+            SubForm_pnl.Controls.Add(ER);
+            SubFormTitle_lbl.Text = "New Employee Registration";
+            ER.EMP_Type = EMP_Type;
+            ER.empID = PassEmp_ID;
+            OpenChildForm(ER);     // Dispaly the form on panel and hide the exist one.
+        }
+
         private void Registration_btn_Click(object sender, EventArgs e)
         {
             setButton();
             //LeaveManagement LMF = new LeaveManagement();
-            Bitmap B = new Bitmap(@"..\..\..\RECA_EMS\Images\Registration_Click_btn.png");  // Change the button image when click
+            Bitmap B = new Bitmap(@"C:\Users\DJBur\Documents\RECA_EmployeeManagementSystem\Images\Registration_Click_btn.png");  // Change the button image when click
             Registration_btn.BackgroundImage = B;
             Emp_Registration ER = new Emp_Registration() { TopLevel = false, TopMost = true };  // Load the employee registration subform into the main frame.
             SubForm_pnl.Controls.Add(ER);

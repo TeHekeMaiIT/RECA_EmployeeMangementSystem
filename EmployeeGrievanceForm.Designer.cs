@@ -60,10 +60,9 @@ namespace LeaveMangementForm
             this.PGlabel.BackColor = System.Drawing.Color.Transparent;
             this.PGlabel.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PGlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PGlabel.Location = new System.Drawing.Point(13, 7);
-            this.PGlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PGlabel.Location = new System.Drawing.Point(10, 6);
             this.PGlabel.Name = "PGlabel";
-            this.PGlabel.Size = new System.Drawing.Size(331, 50);
+            this.PGlabel.Size = new System.Drawing.Size(257, 40);
             this.PGlabel.TabIndex = 46;
             this.PGlabel.Text = "Personal Grievance";
             // 
@@ -73,10 +72,9 @@ namespace LeaveMangementForm
             this.RFlabel.BackColor = System.Drawing.Color.Transparent;
             this.RFlabel.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RFlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RFlabel.Location = new System.Drawing.Point(465, 7);
-            this.RFlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RFlabel.Location = new System.Drawing.Point(349, 6);
             this.RFlabel.Name = "RFlabel";
-            this.RFlabel.Size = new System.Drawing.Size(309, 50);
+            this.RFlabel.Size = new System.Drawing.Size(239, 40);
             this.RFlabel.TabIndex = 47;
             this.RFlabel.Text = "Resignation Form";
             // 
@@ -85,10 +83,9 @@ namespace LeaveMangementForm
             this.empIDlabel.AutoSize = true;
             this.empIDlabel.BackColor = System.Drawing.Color.Transparent;
             this.empIDlabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empIDlabel.Location = new System.Drawing.Point(9, 71);
-            this.empIDlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.empIDlabel.Location = new System.Drawing.Point(7, 58);
             this.empIDlabel.Name = "empIDlabel";
-            this.empIDlabel.Size = new System.Drawing.Size(121, 22);
+            this.empIDlabel.Size = new System.Drawing.Size(91, 17);
             this.empIDlabel.TabIndex = 48;
             this.empIDlabel.Text = "Employee ID";
             // 
@@ -97,10 +94,9 @@ namespace LeaveMangementForm
             this.empNameLabel.AutoSize = true;
             this.empNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.empNameLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empNameLabel.Location = new System.Drawing.Point(9, 92);
-            this.empNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.empNameLabel.Location = new System.Drawing.Point(7, 75);
             this.empNameLabel.Name = "empNameLabel";
-            this.empNameLabel.Size = new System.Drawing.Size(151, 22);
+            this.empNameLabel.Size = new System.Drawing.Size(116, 17);
             this.empNameLabel.TabIndex = 49;
             this.empNameLabel.Text = "Employee Name";
             // 
@@ -109,10 +105,9 @@ namespace LeaveMangementForm
             this.empPosLabel.AutoSize = true;
             this.empPosLabel.BackColor = System.Drawing.Color.Transparent;
             this.empPosLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empPosLabel.Location = new System.Drawing.Point(9, 134);
-            this.empPosLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.empPosLabel.Location = new System.Drawing.Point(7, 109);
             this.empPosLabel.Name = "empPosLabel";
-            this.empPosLabel.Size = new System.Drawing.Size(78, 22);
+            this.empPosLabel.Size = new System.Drawing.Size(60, 17);
             this.empPosLabel.TabIndex = 50;
             this.empPosLabel.Text = "Position";
             // 
@@ -121,10 +116,9 @@ namespace LeaveMangementForm
             this.deplabel.AutoSize = true;
             this.deplabel.BackColor = System.Drawing.Color.Transparent;
             this.deplabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deplabel.Location = new System.Drawing.Point(9, 113);
-            this.deplabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deplabel.Location = new System.Drawing.Point(7, 92);
             this.deplabel.Name = "deplabel";
-            this.deplabel.Size = new System.Drawing.Size(109, 22);
+            this.deplabel.Size = new System.Drawing.Size(85, 17);
             this.deplabel.TabIndex = 51;
             this.deplabel.Text = "Department";
             // 
@@ -133,10 +127,9 @@ namespace LeaveMangementForm
             this.dateLabel.AutoSize = true;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(9, 198);
-            this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dateLabel.Location = new System.Drawing.Point(7, 161);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(50, 22);
+            this.dateLabel.Size = new System.Drawing.Size(39, 17);
             this.dateLabel.TabIndex = 53;
             this.dateLabel.Text = "Date";
             // 
@@ -144,10 +137,9 @@ namespace LeaveMangementForm
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(9, 236);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(7, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 17);
+            this.label7.Size = new System.Drawing.Size(120, 13);
             this.label7.TabIndex = 54;
             this.label7.Text = "Please explain the issue";
             // 
@@ -155,10 +147,9 @@ namespace LeaveMangementForm
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(449, 61);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(337, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(239, 17);
+            this.label9.Size = new System.Drawing.Size(176, 13);
             this.label9.TabIndex = 56;
             this.label9.Text = "Please list the reason for resignation";
             // 
@@ -166,10 +157,9 @@ namespace LeaveMangementForm
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(449, 332);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(337, 270);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(199, 17);
+            this.label10.Size = new System.Drawing.Size(151, 13);
             this.label10.TabIndex = 57;
             this.label10.Text = "Reconfirm account credentials";
             // 
@@ -178,10 +168,9 @@ namespace LeaveMangementForm
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(453, 443);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Location = new System.Drawing.Point(340, 360);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(236, 21);
+            this.checkBox1.Size = new System.Drawing.Size(178, 17);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Are you sure you wish to resign?";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -198,10 +187,9 @@ namespace LeaveMangementForm
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(484, 483);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(363, 392);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(255, 49);
+            this.button3.Size = new System.Drawing.Size(191, 40);
             this.button3.TabIndex = 8;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -217,10 +205,9 @@ namespace LeaveMangementForm
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(13, 483);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(10, 392);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 49);
+            this.button1.Size = new System.Drawing.Size(128, 40);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -236,10 +223,9 @@ namespace LeaveMangementForm
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(185, 483);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(139, 392);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 49);
+            this.button2.Size = new System.Drawing.Size(128, 40);
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -248,10 +234,9 @@ namespace LeaveMangementForm
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 256);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox1.Location = new System.Drawing.Point(10, 208);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(343, 140);
+            this.richTextBox1.Size = new System.Drawing.Size(257, 114);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
@@ -261,21 +246,20 @@ namespace LeaveMangementForm
             this.DateBox.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
             this.DateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateBox.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateBox.Location = new System.Drawing.Point(195, 189);
-            this.DateBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DateBox.Location = new System.Drawing.Point(146, 154);
             this.DateBox.MinDate = new System.DateTime(2009, 1, 1, 0, 0, 0, 0);
             this.DateBox.Name = "DateBox";
-            this.DateBox.Size = new System.Drawing.Size(160, 30);
+            this.DateBox.Size = new System.Drawing.Size(121, 26);
             this.DateBox.TabIndex = 0;
             this.DateBox.Value = new System.DateTime(2022, 11, 9, 0, 0, 0, 0);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(453, 82);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(340, 67);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(332, 245);
+            this.textBox1.Size = new System.Drawing.Size(250, 200);
             this.textBox1.TabIndex = 4;
             // 
             // label1
@@ -284,10 +268,9 @@ namespace LeaveMangementForm
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(191, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(143, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 22);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 67;
             this.label1.Text = "Emp ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -298,10 +281,9 @@ namespace LeaveMangementForm
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 92);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(143, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 22);
+            this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 68;
             this.label2.Text = "Name";
             // 
@@ -311,10 +293,9 @@ namespace LeaveMangementForm
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(191, 113);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(143, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 22);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 69;
             this.label3.Text = "Department";
             // 
@@ -324,10 +305,9 @@ namespace LeaveMangementForm
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(191, 134);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(143, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 22);
+            this.label4.Size = new System.Drawing.Size(60, 17);
             this.label4.TabIndex = 70;
             this.label4.Text = "Position";
             // 
@@ -335,12 +315,11 @@ namespace LeaveMangementForm
             // 
             this.watermarkTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.watermarkTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watermarkTextBox2.Location = new System.Drawing.Point(453, 398);
-            this.watermarkTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.watermarkTextBox2.Location = new System.Drawing.Point(340, 323);
             this.watermarkTextBox2.MaxLength = 20;
             this.watermarkTextBox2.Name = "watermarkTextBox2";
             this.watermarkTextBox2.PasswordChar = '*';
-            this.watermarkTextBox2.Size = new System.Drawing.Size(333, 30);
+            this.watermarkTextBox2.Size = new System.Drawing.Size(250, 24);
             this.watermarkTextBox2.TabIndex = 6;
             this.watermarkTextBox2.WatermarkText = "password";
             // 
@@ -348,19 +327,18 @@ namespace LeaveMangementForm
             // 
             this.watermarkTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.watermarkTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watermarkTextBox1.Location = new System.Drawing.Point(453, 356);
-            this.watermarkTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.watermarkTextBox1.Location = new System.Drawing.Point(340, 289);
             this.watermarkTextBox1.MaxLength = 20;
             this.watermarkTextBox1.Name = "watermarkTextBox1";
-            this.watermarkTextBox1.Size = new System.Drawing.Size(333, 30);
+            this.watermarkTextBox1.Size = new System.Drawing.Size(250, 24);
             this.watermarkTextBox1.TabIndex = 5;
             this.watermarkTextBox1.WatermarkText = "username";
             // 
             // EmployeeGrievanceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 567);
+            this.ClientSize = new System.Drawing.Size(605, 461);
             this.Controls.Add(this.watermarkTextBox2);
             this.Controls.Add(this.watermarkTextBox1);
             this.Controls.Add(this.label4);
@@ -385,6 +363,7 @@ namespace LeaveMangementForm
             this.Controls.Add(this.RFlabel);
             this.Controls.Add(this.PGlabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmployeeGrievanceForm";
             this.Text = "EmployeeGrievanceForm";
             this.Load += new System.EventHandler(this.EmployeeGrievanceForm_Load);
